@@ -1,0 +1,727 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background: rgb(41, 34, 34);
+}
+
+.home
+{
+    width: 100%;
+    height: 100vh;
+    background: #141414;
+}
+
+
+.banner
+{
+    width: 150px;
+    top: 110px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    transition: all 0.4s ease;
+}
+
+.banner:hover
+{
+    width: 170px;
+    
+}
+
+.about
+{
+    height: 100%;
+    padding-top: 40px;
+    background: #B86125;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.about .h1
+{
+    text-align: center;
+    margin: 20px auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+
+.about .p1
+{
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 25px;
+}
+
+.container
+{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+
+.aboutimg
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.aboutimg img
+{
+    max-width: 100%;
+    transition: all 0.4s ease;
+}
+
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.8s;
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    z-index: 100000;
+    
+}
+
+header.sticky
+{
+    padding-left: 30px;
+    background: #fff;
+}
+
+
+header .logo
+{
+    position: relative;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: none;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+}
+
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a
+{
+    position: relative;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.6s;
+}
+
+header.sticky .logo,
+header.sticky ul li a
+{
+    color: #000;
+}
+
+header ul li a:hover
+{
+    color: #000;
+    background: #fff
+}
+
+header.sticky ul li a:hover
+{
+    color: rgb(255, 255, 255);
+    background: rgb(129, 34, 34);
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width:1000px){
+    .nav-bar{
+        display: none;
+    }
+}
+
+
+
+.brand
+{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+
+.brand h1
+{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+
+.brand p
+{
+    margin-top: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+@media(max-width: 950px){
+    .brand{
+        transform: translateY(-40%);
+    }
+    
+    .brand h1{
+        font-size: 50px;
+    }
+    
+    .brand p{
+        font-size: 15px;
+    }
+
+    .banner{
+        width: 150px;
+        top: 100px;
+    }
+    
+
+}
+
+
+.products
+{
+    height: 100%;
+    padding-top: 40px;
+    background: #F8E9D6;
+    color: rgb(19, 19, 19);
+    align-content: center;
+}
+
+
+.productsh1
+{
+    text-align: center;
+    margin: 20px auto;
+    padding-top: 40px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 10px;
+    
+}
+
+.product1
+{
+    width: 100%;
+    height: 100vh;
+    background: #F8E9D6;
+}
+
+.letterhanger
+{
+    width: 220px;
+    position: absolute;
+    padding-left: 280px;
+    padding-top: 20px;
+    transition: 0.7s;
+}
+
+.letterhanger:hover
+{
+    width: 230px;
+    padding-left: 270px;
+    padding-top: 10px;
+    transition: 0.7s;
+}
+
+.product1 .h1
+{
+    font-size: 60px;
+    padding-top: 140px;
+    padding-left: 609px
+}
+
+.product1 .p
+{
+    font-size: 15px;
+    margin-top: 10px;
+    padding-left: 611px
+}
+
+.product1 .h2
+{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 15px;
+    padding-left: 610px
+}
+
+.product1button
+{
+    padding-left: 600px;
+    margin-top: 20px;
+    top: 420px;
+}
+
+.product1button .addtocart
+{
+    width: 200px;
+    height: 50px;
+    color: rgb(41, 4, 4);
+    font-size: 20px;
+    padding: 15x 0px;
+    text-align: center;
+    margin: 0px 6px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 2px solid rgb(41, 4, 4);
+    background: transparent;
+    transition: 0.5s;
+}
+
+.product1button .buynow
+{
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    padding: 15x 0px;
+    text-align: center;
+    margin: 0px 6px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 2px solid rgb(129, 34, 34);
+    background: rgb(129, 34, 34);
+    transition: 0.5s;
+}
+
+.product1button .addtocart:hover
+{
+    color: #fff;
+    background: rgb(129, 34, 34);
+    border: rgb(129, 34, 34);
+    transition: 0.3s;
+}
+
+.product1button .buynow:hover
+{
+    color: #000;
+    background: #fff;
+    border: rgb(255, 255, 255);
+    transition: 0.3s;
+
+}
+
+.product2
+{
+    width: 100%;
+    height: 100vh;
+    background: #7B583C;
+    color: #fff;
+}
+
+.product2 .elephantcushion
+{
+    width: 400px;
+    position: absolute;
+    padding-left: 200px;
+    padding-top: 60px;
+    transition: 0.7s;
+}
+
+.product2 .elephantcushion:hover
+{
+    width: 420px;
+    padding-left: 190px;
+    padding-top: 50px;
+    transition: 0.7s;
+}
+
+.product2 .h1
+{
+    font-size: 60px;
+    padding-top: 140px;
+    padding-left: 609px;
+}
+
+.product2 .p
+{
+    font-size: 15px;
+    margin-top: 10px;
+    padding-left: 611px;
+}
+
+.product2 .h2
+{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 15px;
+    padding-left: 610px;
+}
+
+.product2button
+{
+    padding-left: 600px;
+    margin-top: 20px;
+    top: 420px;
+}
+
+.product2button .addtocart
+{
+    width: 200px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 15x 0px;
+    text-align: center;
+    margin: 0px 6px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 2px solid rgb(255, 255, 255);
+    background: transparent;
+    transition: 0.5s;
+}
+
+.product2button .buynow
+{
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    padding: 15x 0px;
+    text-align: center;
+    margin: 0px 6px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 2px solid rgb(129, 34, 34);
+    background: rgb(129, 34, 34);
+    transition: 0.5s;
+}
+
+.product2button .addtocart:hover
+{
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.product2button .buynow:hover
+{
+    color: #000;
+    background: #fff;
+    border: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+
+
+
+
+
+.product3
+{
+    width: 100%;
+    height: 100vh;
+    background: #2F1E16;
+    color: #fff;
+}
+
+.product3 .elephantserv
+{
+    width: 400px;
+    position: absolute;
+    padding-left: 200px;
+    padding-top: 60px;
+    transition: 0.7s;
+}
+
+.product3 .elephantserv:hover
+{
+    width: 430px;
+    padding-left: 185px;
+    padding-top: 50px;
+    transition: 0.7s;
+}
+
+.product3 .h1
+{
+    font-size: 60px;
+    padding-top: 140px;
+    padding-left: 609px;
+}
+
+.product3 .p
+{
+    font-size: 15px;
+    margin-top: 10px;
+    padding-left: 611px;
+}
+
+.product3 .h2
+{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 15px;
+    padding-left: 610px;
+}
+
+.product3button
+{
+    padding-left: 600px;
+    margin-top: 20px;
+    top: 420px;
+}
+
+.product3button .addtocart
+{
+    width: 200px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 15x 0px;
+    text-align: center;
+    margin: 0px 6px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 2px solid rgb(255, 255, 255);
+    background: transparent;
+    transition: 0.5s;
+}
+
+.product3button .buynow
+{
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    padding: 15x 0px;
+    text-align: center;
+    margin: 0px 6px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 2px solid rgb(129, 34, 34);
+    background: rgb(129, 34, 34);
+    transition: 0.5s;
+}
+
+.product3button .addtocart:hover
+{
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.product3button .buynow:hover
+{
+    color: #000;
+    background: #fff;
+    border: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.special
+{
+    color: rgb(255, 135, 22);
+    font-size: 40px;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.discount
+{
+    background: #63341f;
+    padding: 50px;
+}
+
+
+.table
+{
+    color: #fff;
+    font-size: 25px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+/*responsive*/
+@media(max-width: 955px){
+    .table{
+        width: 50%;
+        font-size: 15px;
+    }
+
+    .special{
+        width: 50%;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 550px){
+    .table{
+        width: 90%;
+        font-size: 15px;
+    }
+}
+
+
+.tdd
+{
+    text-align: left;
+}
+
+
+
+.footer
+{
+    background-color: rgb(19, 19, 19);
+    padding: 70px 0px;
+}
+
+.container
+{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer .row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer ul
+{
+    list-style: none;
+}
+
+.footer-col
+{
+    width: 25%;
+    padding: 0px 70px;
+}
+
+.footer-col h4
+{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col ul li
+{
+    margin-bottom: 20px;
+}
+
+.footer-col ul li a
+{
+    font-size: 16px;
+    color: rgb(150, 150, 150);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.footer-col ul li a:hover
+{
+    padding-left: 4px;
+    color: rgb(255, 255, 255);
+}
+
+.footer .social-links a
+{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255, 0.2);
+    margin: 0px 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.footer .social-links a:hover
+{
+    background-color: rgb(202, 54, 54);
+}
+
+
+/*responsive*/
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1215px){
+    .product1,.product2,.product3{
+        display: none;
+    }
+}
+
+@media(min-width: 1216px){
+    .productsresponse{
+        display: none;
+    }
+}
