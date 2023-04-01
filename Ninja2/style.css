@@ -177,12 +177,11 @@ body {
 }
 
 
-@media(max-width: 450px) {
+@media(max-width: 1600px) {
     .ninja {
-
-    position: absolute;
-    width: 35px;
-    margin-top: 141px;
-    margin-left: 70px;
+        position: absolute;
+        width: 110px;
+        margin-top: 437px;
+        margin-left: 150px;
     }
 }
