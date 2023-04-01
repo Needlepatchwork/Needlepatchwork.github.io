@@ -87,3 +87,52 @@ body {
     cursor: grab;
     animation: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 573px) {
+    .startninja {
+        width: 100px;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+
+    .startmenuname {
+        margin-top: 70px;
+        margin-left: 250px;
+        font-size: 35px;
+        color: rgb(255, 255, 255);
+        font-family: 'Press Start 2P', cursive;
+        filter: drop-shadow(7px 7px 6px #1f1f1f);
+    }
+    
+    .gamestartenter {
+    
+        position: absolute;
+        margin-top: 150px;
+        margin-left: 270px;
+        font-size: 10px;
+        color: rgb(255, 255, 255);
+        font-family: 'Press Start 2P', cursive;
+        animation: blink 1.5s linear infinite;
+        filter: drop-shadow(7px 7px 4px #1f1f1f);
+    }
+
+    .ninja {
+
+        position: absolute;
+        width: 35px;
+        margin-top: 190px;
+        margin-left: 70px;
+        
+    }
+}
