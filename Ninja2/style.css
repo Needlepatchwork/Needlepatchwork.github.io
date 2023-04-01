@@ -136,3 +136,53 @@ body {
         
     }
 }
+
+
+@media(max-width: 479px) {
+    .startninja {
+        width: 90px;
+        margin-top: 45px;
+        margin-left: 90px;
+    }
+
+    .startmenuname {
+        margin-top: 70px;
+        margin-left: 220px;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        font-family: 'Press Start 2P', cursive;
+        filter: drop-shadow(7px 7px 6px #1f1f1f);
+    }
+    
+    .gamestartenter {
+    
+        position: absolute;
+        margin-top: 125px;
+        margin-left: 230px;
+        font-size: 9px;
+        color: rgb(255, 255, 255);
+        font-family: 'Press Start 2P', cursive;
+        animation: blink 1.5s linear infinite;
+        filter: drop-shadow(7px 7px 4px #1f1f1f);
+    }
+
+    .ninja {
+
+        position: absolute;
+        width: 35px;
+        margin-top: 141px;
+        margin-left: 70px;
+        
+    }
+}
+
+
+@media(max-width: 450px) {
+    .ninja {
+
+    position: absolute;
+    width: 35px;
+    margin-top: 141px;
+    margin-left: 70px;
+    }
+}
