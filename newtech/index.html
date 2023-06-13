@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>newtech.lk</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="bootstrap.css"/>
+    </head>
+
+    <body>
+
+        <!--Navbar-->
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+               
+              <a class="offset-xl-1 navbar-brand" href="#">
+                <img src="resources/logo.png" class="logo" >
+              </a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" 
+              aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation" onclick="menuChange()">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarScroll">
+
+                <form class="col-6 offset-1 d-flex" role="search">
+                  <input style="border-color: rgb(233, 231, 231);" class="form-control me-2" type="search" placeholder="iphone 13 pro max" aria-label="Search">
+                </form>
+
+                <img src="resources/search.png" class="searchimg">
+                <img src="resources/cart.png" class="offset-1 offset-xl-2 cartimg">
+                <img src="resources/login.png" class="ms-4 loginimg">
+
+                <button class="col-lg-2 col-xl-1 btn btn-danger ms-4" onclick="changeViewRegister()">Register</button>
+              </div>
+            </div>
+          </nav>
+
+          <div class="offcanvas offcanvas-end show text-bg-dark1" tabindex="-1" id="offcanvasDark1" aria-labelledby="offcanvasDarkLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkLabel">NEW TECH</h5>
+              <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvasDark" aria-label="Close" onclick="menuChange()"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul style="display: block;" class="nav nav-underline">
+                <li class="nav-item me-3">
+                  <a style="color: rgb(44, 44, 44);" class="nav-link" href="#" id="home" onclick="homePage()">Home</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a style="color: rgb(44, 44, 44);" class="nav-link" href="#" id="product" onclick="productPage()">Products</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a style="color: rgb(44, 44, 44);" class="nav-link" href="#" id="sell" onclick="sellPage()">Sell</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a style="color: rgb(44, 44, 44);" class="nav-link" href="#" id="about" onclick="aboutPage()">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="background-color: rgb(255, 38, 0);" class="d-none d-lg-block container-fluid">
+            <div class="offset-1">
+              <ul class="nav nav-underline">
+                <li class="nav-item me-3">
+                  <a style="color: white;" class="nav-link" href="#" id="home" onclick="homePage()">Home</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a style="color: white;" class="nav-link" href="#" id="product" onclick="productPage()">Products</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a style="color: white;" class="nav-link" href="#" id="sell" onclick="sellPage()">Sell</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a style="color: white;" class="nav-link" href="#" id="about" onclick="aboutPage()">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          
+
+
+        <!--Navbar-->
+
+        <!--Register-->
+
+          <div class="col-12 p-3">
+            <div class="row">
+                
+                <!--signup box-->
+
+                <div class="col-10 col-xl-6 col-lg-8 offset-1 offset-xl-3 offset-lg-2 d-none" id="signupbox">
+                    <div class="row g-2">
+
+                        <div class="col-12 ">
+                            <p class="title02">Create New Account.</p>
+                        </div>
+
+                        <div class="col-6">
+                            <label class="form-label">First Name</label>
+                            <input class="form-control" type="text" placeholder="ex: John"/>
+                        </div>
+
+                        <div class="col-6">
+                            <label class="form-label">Last Name</label>
+                            <input class="form-control" type="text" placeholder="ex: Doe"/>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Email</label>
+                            <input class="form-control" type="email" placeholder="ex: john@gmail.com"/>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Password</label>
+                            <input class="form-control" type="password" placeholder="ex: john@123"/>
+                        </div>
+
+                        <div class="col-6">
+                            <label class="form-label">Mobile</label>
+                            <input class="form-control" type="number" placeholder="ex: 077*****78"/>
+                        </div>
+
+                        <div class="col-6">
+                            <label class="form-label">Gender</label>
+                            <select class="form-control">
+                                <option>Select Your Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-md-4 col-sm-3 d-grid mt-3">
+                            <button class="btn btn-primary" onclick="changeViewSignUpDone()">Sign Up</button>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-md-8 col-sm-9 d-grid mt-3">
+                            <button class="btn btn-dark" onclick="changeView();">Already have an account? Sign In</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--signup box-->
+
+
+                <!--signin box-->
+
+                <div class="col-10 col-lg-6 col-md-8 offset-1 offset-lg-3 offset-md-2 d-none" id="signinbox">
+                    <div class="row g-2">
+                        
+                        <div class="col-12">
+                            <p class="title02">Sign In</p>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Email</label>
+                            <input class="form-control" type="email" placeholder="ex: john@gmail.com">
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Password</label>
+                            <input class="form-control" type="password" placeholder="ex: john@123">
+                        </div>
+
+                        <div class="col-6 form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="rememberme">
+                            <label class="form-check-label" for="flexCheckDefault">Remember Me</label>
+                        </div>
+
+                        <div class="col-6">
+                            <a href="#" class="link-primary">Forgot Password</a>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-sm-3 d-grid">
+                            <button class="btn btn-primary" onclick="changeViewSignInDone()">Sign In</button>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-sm-9 d-grid">
+                            <button class="btn btn-danger" onclick="changeView();">New to eShop? Join Now</button>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!--signin box-->
+
+
+            </div>
+          </div>
+
+        <!--Register-->
+      
+        
+        <script src="script.js"></script>
+    </body>
+</html>
