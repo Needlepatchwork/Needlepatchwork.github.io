@@ -1,3 +1,23 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url("OpenSans-Semibold.ttf");
+}
+
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "OpenSansExtraBoldItalic";
+    src: url("OpenSans-ExtraBoldItalic.ttf");
+}
+
+body{
+    font-family: "OpenSans";
+    font-size: 14px;
+}
+
 .logo{
     height: 25px;
 }
@@ -14,3 +34,51 @@
     height: 27px;
 }
 
+.pagetitle{
+    font-size: 30px;
+    font-family: "OpenSansBold";
+}
+
+.adminlogo{
+    height: 80px;
+}
+
+.menuhover:hover {
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+}
+
+.menuhighlight{
+    background-color: rgb(230, 230, 230);
+}
+
+.background{
+    background-image: url(resources/adminlogo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.catergories{
+    font-size: 20px;
+    font-family: "OpenSansBold";
+}
+
+.catergorycardhover:hover{
+    background-color: rgb(255, 208, 187);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.superdeals{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: "OpenSansExtraBoldItalic";
+}
+
+.superdealsdiv{
+    background-color: rgb(255, 38, 0);
+}
+
+.superdealcardhover:hover{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+}

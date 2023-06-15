@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>New Tech Admin Panel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="bootstrap.css"/>
+    </head>
+
+    <body style="background-color: rgb(253, 234, 229);">
+        
+
+        <!---signin-->
+
+        <div class="container-fluid mt-5" id="adminsignin">
+            <div class="row">
+                <div class="col-11 offset-1 d-block d-md-none">
+                    <img src="resources/adminlogo.png" style="height: 110px;"/>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+
+                <div class="col-md-4 col-lg-3 offset-1 background"></div>
+                
+                <div class="col-8 col-md-4 col-lg-4 offset-1">
+                    <div class="row">
+                        <p class="pagetitle">Sign In</p>
+                        <form>
+                            <div class="row mb-3">
+                                <label class="form-label">Email</label>
+                                <input style="border: none;box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);" type="email" class="form-control ms-2 col-12">
+                            </div>
+                            
+                            <div class="row mb-3">
+                                <label class="form-label">Password</label>
+                                <input style="border: none;box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);" type="password" class="form-control ms-2">
+                            </div>
+                            
+                            <div class="row mb-3">
+                              <div class="col-12">
+                                <div>
+                                  <input class="form-check-input" type="checkbox">
+                                  <label class="form-check-label" for="gridCheck">
+                                    Remember Me
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+
+                        </form>
+
+                        <div>
+                            <button onclick="adminsigninbtn(); changeBannerAdminStart();" type="submit" class="col-4 col-lg-3 btn btn-primary me-4">Sign in</button>
+                            <a href="index.html"><button type="submit" class="col-4 col-lg-3 btn btn-danger">Back</button></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---signin-->
+
+
+
+        <!---panel-->
+        <div class="container-fluid d-none" id="adminpanel">
+            <div class="row">
+                <div style="background-color: white;" class="col-3 col-lg-2 d-none d-md-block">
+                    <img src="resources/adminlogo.png" class="adminlogo m-4">
+                    
+                    <div class="px-3 p-2 menuhover menuhighlight" onclick="overview();" id="adoverview">Overview</div>
+                    <div class="px-3 p-2 menuhover" onclick="overview();" id="adproduct">Product</div>
+                    <div class="px-3 p-2 menuhover" onclick="overview();" id="adorders">Orders</div>
+                    <div class="px-3 p-2 menuhover" onclick="overview();" id="adcustomers">Customers</div>
+                    <div class="px-3 p-2 menuhover" onclick="overview();" id="adreviews">Reviews</div>
+                    <div class="px-3 p-2 menuhover" onclick="overview();" id="adfinance">Finance</div>
+                    <div class="px-3 p-2 menuhover" onclick="overview();" id="adsetting">Setting</div>
+                    <div class="px-3 p-5"></div>
+                    <div class="px-3 p-2 menuhover" onclick="overview();" id="adhelp">Help</div>
+                    <div class="px-3 p-2 menuhover" onclick="overview();" id="adcontactus">Contact us</div>
+                    <div class="px-3 p-2 mb-2 menuhover" onclick="overview();" id="adlogout">Log out</div>
+                
+                    
+                    
+                </div>
+
+                <div style="background-color: rgb(243, 243, 243);" class="col-12 col-lg-10 col-md-9">
+                    
+                    <div class="row px-3 pt-3">
+                        <div class="d-none d-md-block">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div style="border-radius: 5px;" class="carousel-inner">
+                              <div class="carousel-item" id="adminbanner1">
+                                <img src="resources/adminbanner1.jpeg" class="d-block w-100">
+                              </div>
+                              <div class="carousel-item active" id="adminbanner2">
+                                <img src="resources/adminbanner2.jpeg" class="d-block w-100">
+                              </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="pt-4">
+                            <p class="pagetitle">Welcome back, Thisara</p>
+                        </div>
+
+                        <div class="row px-4 pt-3">
+                            <div style="border: none;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="card col-12 col-sm-5 col-xl-3 me-sm-4 mb-4">
+                                <div class="card-body">
+                                  <h6 class="mb-3 text-body-secondary">Total sales</h6>
+                                  <h5>LKR 285,300.00</h5>
+                                  <h6 class="text-body-tertiary">25% ↑↓</h6>
+                                </div>
+                            </div>
+                            <div style="border: none;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="card col-12 col-sm-5 col-xl-3 me-sm-4 mb-4">
+                                <div class="card-body">
+                                  <h6 class="mb-3 text-body-secondary">Visitors</h6>
+                                  <h5>LKR 285,300.00</h5>
+                                  <h6 class="text-body-tertiary">25% ↑↓</h6>
+                                </div>
+                            </div>
+                            <div style="border: none;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="card col-12 col-sm-5 col-xl-3 mb-4 ">
+                                <div class="card-body">
+                                  <h6 class="mb-3 text-body-secondary">Total orders</h6>
+                                  <h5>LKR 285,300.00</h5>
+                                  <h6 class="text-body-tertiary">25% ↑↓</h6>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---panel-->
+
+        <script src="script.js"></script>
+    </body>
+</html>

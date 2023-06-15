@@ -11,6 +11,7 @@
     <body>
 
         <!--Navbar-->
+        <div class="sticky-top">
           <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                
@@ -19,7 +20,7 @@
               </a>
               
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" 
-              aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation" onclick="menuChange()">
+              aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation" onclick="menuChange();">
                 <span class="navbar-toggler-icon"></span>
               </button>
 
@@ -38,30 +39,51 @@
             </div>
           </nav>
 
-          <div class="offcanvas offcanvas-end show text-bg-dark1" tabindex="-1" id="offcanvasDark1" aria-labelledby="offcanvasDarkLabel">
+          <div class="offcanvas offcanvas-end show text-bg-dark1 d-none" tabindex="-1" id="offcanvasDark1" aria-labelledby="offcanvasDarkLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasDarkLabel">NEW TECH</h5>
               <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvasDark" aria-label="Close" onclick="menuChange()"></button>
             </div>
             <div class="offcanvas-body">
               <ul style="display: block;" class="nav nav-underline">
-                <li class="nav-item me-3">
-                  <a style="color: rgb(44, 44, 44);" class="nav-link" href="#" id="home" onclick="homePage()">Home</a>
+                <li class="nav-item mb-2">
+                  <a style="color: rgb(44, 44, 44);" class="nav-link" href="#" id="home" onclick="homePage(); menuChange();">Home</a>
                 </li>
-                <li class="nav-item me-3">
-                  <a style="color: rgb(44, 44, 44);" class="nav-link" href="#" id="product" onclick="productPage()">Products</a>
+                <li class="nav-item mb-2">
+                  <a style="color: rgb(44, 44, 44);" class="nav-link" href="#" id="product" onclick="productPage(); menuChange();">Products</a>
                 </li>
-                <li class="nav-item me-3">
-                  <a style="color: rgb(44, 44, 44);" class="nav-link" href="#" id="sell" onclick="sellPage()">Sell</a>
+                <li class="nav-item mb-2">
+                  <a style="color: rgb(44, 44, 44);" class="nav-link" href="#" id="sell" onclick="sellPage(); menuChange();">Sell</a>
                 </li>
-                <li class="nav-item me-3">
-                  <a style="color: rgb(44, 44, 44);" class="nav-link" href="#" id="about" onclick="aboutPage()">About</a>
+                <li class="nav-item mb-2">
+                  <a style="color: rgb(44, 44, 44);" class="nav-link" href="#" id="about" onclick="aboutPage(); menuChange();">About</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a style="color: rgb(44, 44, 44);" class="nav-link" href="#" id="advsearch" onclick="advsearchPage(); menuChange();">Advanced Search</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a style="color: rgb(44, 44, 44);" class="nav-link" href="admin.html" onclick="menuChange();">Admin Panel</a>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div style="background-color: rgb(255, 38, 0);" class="d-none d-lg-block container-fluid">
+          <nav style="background-color: rgb(243, 243, 243);" class="navbar d-lg-none">
+            <div class="container-fluid col-12">
+              <div class="col-9 offset-1">
+                <form role="search">
+                  <input style="border-color: rgb(233, 231, 231);" class="form-control" type="search" placeholder="iphone 13 pro max" aria-label="Search">
+                 </form>
+              </div>
+              
+              <div class="col-2">
+                <img src="resources/search.png" class="ms-2 searchimg">
+              </div>
+              
+            </div>
+          </nav>
+
+          <div style="background-color: rgb(255, 38, 0);box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 10px 0 rgba(0, 0, 0, 0.1);" class="d-none d-lg-block container-fluid">
             <div class="offset-1">
               <ul class="nav nav-underline">
                 <li class="nav-item me-3">
@@ -76,14 +98,187 @@
                 <li class="nav-item me-3">
                   <a style="color: white;" class="nav-link" href="#" id="about" onclick="aboutPage()">About</a>
                 </li>
+                <li class="nav-item me-3">
+                  <a style="color: white;" class="nav-link">|</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a style="color: white;" class="nav-link" href="#" id="advsearch" onclick="advsearchPage()">Advanced Search</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a style="color: white;" class="nav-link">|</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a style="color: white;" class="nav-link" href="admin.html" id="adminpanel">Admin Panel</a></a>
+                </li>
               </ul>
             </div>
           </div>
-
-          
-
-
+        </div>
         <!--Navbar-->
+
+        <!--Home-->
+        <div class="container-fluid col-10 offset-1 mt-3" id="homesection">
+        <div class="row">
+
+        <div class="col-12 col-lg-6">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+              <img src="resources/banners/1.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="resources/banners/2.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="resources/banners/3.jpg" class="d-block w-100">
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="d-none d-lg-block col-lg-6">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img src="resources/banners/4.jpg" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="resources/banners/5.jpg" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="resources/banners/6.jpg" class="d-block w-100">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--categories-->
+        <div class="row mb-5">
+          
+          <div class="col-12">
+            <p class="mt-4 catergories">Catergories</p>
+          </div>
+          
+          <div class="col-12">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+              <div class="col">
+                <div class="card h-100 catergorycardhover">
+                  <img src="resources/products/iphone10.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Phone</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 catergorycardhover">
+                  <img src="resources/products/tablet9.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Tablet</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 catergorycardhover">
+                  <img src="resources/products/laptop2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Laptop</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 catergorycardhover">
+                  <img src="resources/products/mac2.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body catergorycardhover">
+                    <h5 class="card-title">Mac</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 catergorycardhover">
+                  <img src="resources/products/tablet10.png" class="card-img-top" alt="...">
+                  <div class="card-body catergorycardhover">
+                    <h5 class="card-title">Accessories</h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!--categories-->
+
+        <!--super deals-->
+        <div class="row">
+          <div style="border-radius: 10px;" class="superdealsdiv">
+          <div class="col-12">
+            <p class="superdeals">SUPER DEALS</p>
+          </div>
+          
+          <div class="col-12 mb-3">
+
+            <div class="row row-cols-3 row-cols-md-6 g-4">
+              <div class="col">
+                <div class="card h-100 superdealcardhover">
+                  <img src="resources/products/iphone10.jpeg" class="card-img-top" alt="...">
+                  
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 superdealcardhover">
+                  <img src="resources/products/tablet9.png" class="card-img-top" alt="...">
+                  
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 superdealcardhover">
+                  <img src="resources/products/laptop2.jpg" class="card-img-top" alt="...">
+                  
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 superdealcardhover">
+                  <img src="resources/products/mac2.jpeg" class="card-img-top" alt="...">
+                  
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 superdealcardhover">
+                  <img src="resources/products/tablet10.png" class="card-img-top" alt="...">
+                  
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 superdealcardhover">
+                  <img src="resources/products/tablet10.png" class="card-img-top" alt="...">
+                  
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          </div>
+        </div>
+        <!--super deals-->
+
+        </div>
+        </div>
+        
+        <!--Home-->
+
 
         <!--Register-->
 
@@ -96,7 +291,7 @@
                     <div class="row g-2">
 
                         <div class="col-12 ">
-                            <p class="title02">Create New Account.</p>
+                            <p class="pagetitle">Create New Account.</p>
                         </div>
 
                         <div class="col-6">
@@ -153,7 +348,7 @@
                     <div class="row g-2">
                         
                         <div class="col-12">
-                            <p class="title02">Sign In</p>
+                            <p class="pagetitle">Sign In</p>
                         </div>
 
                         <div class="col-12">
@@ -193,8 +388,174 @@
           </div>
 
         <!--Register-->
-      
+
+
+        <!--about page-->
+
+        <div class="container d-none" id="aboutsection">
+          <div class="col-12">
+
+            <p class="pagetitle">Why Choose Us?</p>
+
+            <div class="row mb-5">
+              <video src="resources/video1.mp4" autoplay loop="true" class="col-12"></video>
+            </div>
+
+            <div class="row">
+ 
+              <p class="col-12">"New Tech" is one of the leading IT retail companies in Sri Lanka.</p>
+            
+              <p class="col-12">Our Major priority is to build and maintain customer relationships by 
+                providing the best value, high-quality products, and outstanding service. 
+                We are also well known for our good customer service. 
+                our well-trained staff effectively assist customers with all of their needs. 
+                Our Customer service doesn’t end with the close of a sale but creates loyalty 
+                for our business by providing good after-sales service.
+              </p>
+
+              <p class="col-12 mb-5">We place great emphasis on the customers’ satisfaction by offering our 
+                customers with a unique & probably the best after-sales service support 
+                by the professionally certified staff for free, for the next 2nd and 3rd 
+                year for all our products.
+              </p>
+
+              <img src="resources/logo.png" class="col-8 offset-2">
+
+            </div>
+          </div>
+        </div>
+
+        <!--about page-->
+
+        <!--advanced search page-->
         
+        <div class="container-fluid d-none" id="advsearchsection">
+          <div class="col-10 col-lg-8 offset-lg-2 offset-1">
+            <div class="row">
+              <p class="pagetitle">Advanced Search</p>
+
+              <div class="col-12 mb-4">
+                <label style="font-weight: 600;" class="form-label">Enter keywords or item number</label>
+                <input class="form-control" type="text" placeholder="ex: apple, ipad, iphone"/>
+              </div>
+
+              <div class="col-8 col-lg-6 mb-4">
+                <label style="font-weight: 600;" class="form-label">Keyword options</label>
+                <select class="form-control">
+                  <option>All words, any order</option>
+                  <option>Any words, any order</option>
+                  <option>Exact words, exact order</option>
+                  <option>Exact words, any order</option>
+                </select>
+              </div>
+
+              <div class="col-8 col-lg-6 mb-4">
+                <label style="font-weight: 600;" class="form-label">In this category</label>
+                <select class="form-control">
+                  <option>All Categories</option>
+                  <option>Laptops</option>
+                  <option>Mobile Phones</option>
+                  <option>Tablets</option>
+                  <option>MacBook</option>
+                  <option>iPad</option>
+                  <option>iPhone</option>
+              </select>
+              </div>
+
+              <div class="col-12 col-md-6 mb-4">
+                <label style="font-weight: 600;" class="form-label">Buying Format</label>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="buyformat">
+                  <label class="form-check-label">
+                    Accepts offers
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="buyformat">
+                  <label class="form-check-label">
+                    Auction
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="buyformat">
+                  <label class="form-check-label">
+                    Buy It Now
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="buyformat">
+                  <label class="form-check-label">
+                    Classified ads
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 mb-4">
+                <label style="font-weight: 600;" class="form-label">Condition</label>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="condition">
+                  <label class="form-check-label">
+                    New
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="condition">
+                  <label class="form-check-label">
+                    Used
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="condition">
+                  <label class="form-check-label">
+                    Not specified
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-12 mb-4">
+                <label style="font-weight: 600;" class="form-label">Price Range</label>
+                <div class="row">
+                  <div class="col-5 col-lg-4">
+                    <input class="form-control" type="text" placeholder="Min"/>
+                  </div>
+
+                  <div class="col-1 text-center">
+                    <p>to</p>
+                  </div>
+
+                  <div class="col-5 col-lg-4">
+                    <input class="form-control" type="text" placeholder="Max"/>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div>
+                  <label style="font-weight: 600;" class="form-label">Shipping</label>
+                </div>
+                
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Free shipping
+                  </label>
+                </div>
+                <div class="form-check mb-5">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Local pickup
+                  </label>
+                </div> 
+              </div>
+              
+              <button class="col-3 col-lg-2 btn btn-primary">Search</button>
+            </div>
+          </div>
+        </div>
+        <!--advanced search page-->
+
+
+
         <script src="script.js"></script>
     </body>
 </html>
