@@ -13,7 +13,7 @@
 
         <!---signin-->
 
-        <div class="container-fluid mt-5" id="adminsignin">
+        <div class="container-fluid mt-5 d-none" id="adminsignin">
             <div class="row">
                 <div class="col-11 offset-1 d-block d-md-none">
                     <img src="resources/adminlogo.png" style="height: 110px;"/>
@@ -66,30 +66,38 @@
 
 
         <!---panel-->
-        <div class="container-fluid d-none" id="adminpanel">
+        <div class="container-fluid" id="adminpanel">
             <div class="row">
+
+                <!--menu-->
                 <div style="background-color: white;" class="col-3 col-lg-2 d-none d-md-block">
                     <img src="resources/adminlogo.png" class="adminlogo m-4">
                     
-                    <div class="px-3 p-2 menuhover menuhighlight" onclick="overview();" id="adoverview">Overview</div>
-                    <div class="px-3 p-2 menuhover" onclick="overview();" id="adproduct">Product</div>
-                    <div class="px-3 p-2 menuhover" onclick="overview();" id="adorders">Orders</div>
-                    <div class="px-3 p-2 menuhover" onclick="overview();" id="adcustomers">Customers</div>
-                    <div class="px-3 p-2 menuhover" onclick="overview();" id="adreviews">Reviews</div>
-                    <div class="px-3 p-2 menuhover" onclick="overview();" id="adfinance">Finance</div>
-                    <div class="px-3 p-2 menuhover" onclick="overview();" id="adsetting">Setting</div>
+                    <div class="px-3 p-2 menuhover menuhighlight" onclick="adoverview();">Overview</div>
+                    <div class="px-3 p-2 menuhover" onclick="admanageproduct();">Product</div>
+                    <div class="px-3 p-2 menuhover" onclick="overview();">Orders</div>
+                    <div class="px-3 p-2 menuhover" onclick="overview();">Customers</div>
+                    <div class="px-3 p-2 menuhover" onclick="overview();">Reviews</div>
+                    <div class="px-3 p-2 menuhover" onclick="overview();">Finance</div>
+                    <div class="px-3 p-2 menuhover" onclick="overview();">Setting</div>
                     <div class="px-3 p-5"></div>
-                    <div class="px-3 p-2 menuhover" onclick="overview();" id="adhelp">Help</div>
-                    <div class="px-3 p-2 menuhover" onclick="overview();" id="adcontactus">Contact us</div>
-                    <div class="px-3 p-2 mb-2 menuhover" onclick="overview();" id="adlogout">Log out</div>
-                
-                    
-                    
+                    <div class="px-3 p-2 menuhover" onclick="overview();">Help</div>
+                    <div class="px-3 p-2 menuhover" onclick="overview();">Contact us</div>
+                    <div class="px-3 p-2 mb-2 menuhover" onclick="overview();">Log out</div>
+            
                 </div>
+
+                <!--menu-->
+
+
+                <!--details-->
 
                 <div style="background-color: rgb(243, 243, 243);" class="col-12 col-lg-10 col-md-9">
                     
-                    <div class="row px-3 pt-3">
+                    <!--overview-->
+                    <div class="row px-3 pt-3 d-none" id="overview">
+
+                        <!--banner-->
                         <div class="d-none d-md-block">
                         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                             <div style="border-radius: 5px;" class="carousel-inner">
@@ -102,7 +110,9 @@
                             </div>
                         </div>
                         </div>
-
+                        <!--banner-->
+                        
+                        <!--greets-->
                         <div class="pt-4">
                             <p class="pagetitle">Welcome back, Thisara</p>
                         </div>
@@ -131,8 +141,363 @@
                             </div>
         
                         </div>
+                        <!--greets-->
+
                     </div>
+                    <!--overview-->
+
+                    <!--manage product-->
+                    <div class="d-none" id="manageproduct">
+                    <div class="row">
+                        <p class="col-10 pagetitle mt-4 ms-3">
+                            Product Management
+                        </p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <select class="form-control ms-3 shadow">
+                                <option>Select Brand</option>
+                                <option>Samsung</option>
+                                <option>Apple</option>
+                                <option>Xiomi</option>
+                                <option>Oppo</option>
+                                <option>Vivo</option>
+                                <option>Google Pixel</option>
+                            </select>
+                        </div>
+
+                        <div class="col-2">
+                            <button class="btn btn-primary">Search</button>
+                        </div>
+
+                        <div class="col-3">
+                            <select class="form-control ms-3 shadow">
+                                <option>Select Catergory</option>
+                                <option>Apple</option>
+                                <option>Xiomi</option>
+                                <option>Oppo</option>
+                                <option>Vivo</option>
+                                <option>Google Pixel</option>
+                            </select>
+                        </div>
+
+                        <div class="col-2">
+                            <button class="btn btn-primary">Search</button>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 mb-4">
+                        <div class="col-12">
+                            <button class="col-1 btn btn-danger ms-3">Delete</button>
+                            <button class="col-1 btn btn-primary ms-3">Edit</button>
+                            <button class="col-1 btn btn-success ms-3">Active</button>
+                            <button class="col-1 btn btn-danger ms-3">Inactive</button>
+                        </div>
+                    </div>
+
+                    <div class="row ms-3 productmanagetablediv">
+                        <table class="table">
+                            <thead>
+                              <tr style="background-color: rgb(255, 230, 225);">
+                                <th scope="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">All</label>
+                                    </div>
+                                </th>
+                                <th scope="col">Product</th>
+                                <th scope="col">Brand</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Price</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>3</td>
+                                <td>2500.00</td>
+                              </tr>
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>1</td>
+                                <td>2500.00</td>
+                              </tr>
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>5</td>
+                                <td>2500.00</td>
+                              </tr>
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>9</td>
+                                <td>2500.00</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                    <!--manage product-->
+
+
+                    <!--add product-->
+                    <div id="addproduct">
+                        <div class="row">
+                            <p class="col-10 pagetitle mt-4 ms-3 mb-2">Add Product</p>
+                        </div>
+                        
+                        <!--product image-->
+                        <div class="row addproductdiv m-3">
+                            <div class="col ms-3 me-3">
+                                <div class="row">
+                                    <p class="col-12 mt-3 mb-0 subtitle">Product Image</p>
+                                    <p style="color: rgb(182, 182, 182);" class="col-12 mb-4">Upload between 4 to 6 images</p>
+                                </div>
+
+                                <div class="row col-lg-9">
+                                    <div class="col-3 col-sm-2">
+                                        <img src="resources/addproductbutton.png" style="border-radius: 10px;" class="col-12">
+                                        <p class="col-12 text-center">Cover Image</p>
+                                    </div>
+
+                                    <div class="col-3 col-sm-2">
+                                        <img src="resources/addproductbutton.png" style="border-radius: 10px;" class="col-12">
+                                        <p class="col-12 text-center">Image 1</p>
+                                    </div>
+
+                                    <div class="col-3 col-sm-2">
+                                        <img src="resources/addproductbutton.png" style="border-radius: 10px;" class="col-12">
+                                        <p class="col-12 text-center">Image 2</p>
+                                    </div>
+
+                                    <div class="col-3 col-sm-2">
+                                        <img src="resources/addproductbutton.png" style="border-radius: 10px;" class="col-12">
+                                        <p class="col-12 text-center">Image 3</p>
+                                    </div>
+
+                                    <div class="col-3 col-sm-2">
+                                        <img src="resources/addproductbutton.png" style="border-radius: 10px;" class="col-12">
+                                        <p class="col-12 text-center">Image 4</p>
+                                    </div>
+                                    
+                                    <div class="col-3 col-sm-2">
+                                        <img src="resources/addproductbutton.png" style="border-radius: 10px;" class="col-12">
+                                        <p class="col-12 text-center">Image 5</p>
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!--product image-->
+
+                        <!--product information-->
+                        <div class="row addproductdiv m-3">
+                            <div class="col ms-3 me-5">
+                                <div class="row">
+                                    <p class="col-12 mt-3 subtitle mb-4">Product Information</p>
+                                </div>
+
+                                <div class="row">
+                                    <p style="font-family: OpenSansSemiBold;" class="col-12 mb-2">Product Name</p>
+                                    <input type="search" class="col-10 form-control ms-2 mb-4"/>
+                                </div>
+
+                                <div class="row">
+                                    <p style="font-family: OpenSansSemiBold;" class="col-12 mb-2">Catergory</p>
+                                    <select class="col-12 form-control ms-2 mb-4">
+                                        <option>Please Select</option>
+                                        <option>Phone</option>
+                                        <option>Tablet</option>
+                                        <option>Laptop</option>
+                                    </select>
+                                </div>
+
+                                <div class="row">
+                                    <p style="font-family: OpenSansSemiBold;" class="col-12 mb-2">Catergory</p>
+                                    <select class="col-12 form-control ms-2 mb-4">
+                                        <option>Please Select</option>
+                                        <option>Samsung</option>
+                                        <option>Apple</option>
+                                        <option>Vivo</option>
+                                        <option>Xiami</option>
+                                        <option>Oppo</option>
+                                        <option>Huawei</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!--product information-->
+
+                        <!--Color Variant-->
+                        <div class="row addproductdiv m-3">
+                            <div class="col-12 ms-3 me-5">
+                                <div class="row">
+                                    <p class="col-12 mt-3 subtitle mb-4">Color Family</p>
+                                </div>
+
+                                <div class="row mb-2">
+                                <div class="form-check col-4 mb-3 ms-3">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">White</label>
+                                </div>
+
+                                <div class="form-check col-4 mb-3 ms-3">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Black</label>
+                                </div>
+
+                                <div class="form-check col-4 mb-3 ms-3">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Pink</label>
+                                </div>
+
+                                <div class="form-check col-4 mb-3 ms-3">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Offwhite</label>
+                                </div>
+
+                                <div class="form-check col-4 mb-3 ms-3">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Purple</label>
+                                </div>
+
+                                <div class="form-check col-4 mb-3 ms-3">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Red</label>
+                                </div>
+
+                                <div class="form-check col-4 mb-3 ms-3">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Blue</label>
+                                </div>
+
+                                <div class="form-check col-4 mb-3 ms-3">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">White</label>
+                                </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Color Variant-->
+
+                        <!--Price and Stock-->
+                        <div class="row addproductdiv m-3">
+                            <div class="col-12 ms-3 me-5">
+                                <div class="row">
+                                    <p class="col-12 mt-3 subtitle mb-4">Product Information</p>
+                                </div>
+
+                                <div class="col-6">
+                                <div class="row">
+                                    <p style="font-family: OpenSansSemiBold;" class="col-12 mb-2">Price</p>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">LKR</span>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <p style="font-family: OpenSansSemiBold;" class="col-12 mb-2">Special Price</p>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">LKR</span>
+                                        <input type="text" class="form-control col-3"/>
+                                    </div>
+                                </div>
+
+                                <div class="row col-6 me-2">
+                                    <p style="font-family: OpenSansSemiBold;" class="col-12 mb-2">Quantity</p>
+                                    <input type="search" class="form-control ms-2 mb-4"/>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Price and Stock-->
+
+                        
+                        <!--Service-->
+                        <div class="row addproductdiv m-3">
+                            <div class="col ms-3 me-5">
+                                <div class="row">
+                                    <p class="col-12 mt-3 subtitle mb-4">Service</p>
+                                </div>
+
+                                <div class="row">
+                                    <p style="font-family: OpenSansSemiBold;" class="col-12 mb-2">Warranty Type</p>
+                                    <select class="col-12 form-control ms-2 mb-4">
+                                        <option>Please Select</option>
+                                        <option>No Warranty</option>
+                                        <option>International Warranty</option>
+                                        <option>Local Warranty</option>
+                                        <option>NewTech Warranty</option>
+                                    </select>
+                                </div>
+
+                                <div class="row">
+                                    <p style="font-family: OpenSansSemiBold;" class="col-12 mb-2">Warranty Period</p>
+                                    <select class="col-12 form-control ms-2 mb-4">
+                                        <option>Please Select</option>
+                                        <option>1 Months</option>
+                                        <option>3 Months</option>
+                                        <option>6 Months</option>
+                                        <option>9 Months</option>
+                                        <option>12 Months</option>
+                                        <option>2 Years</option>
+                                        <option>3 Years</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Service-->
+
+                        <!--Shipping-->
+                        <div class="row addproductdiv m-3">
+                            <div class="col-12 ms-3 me-5">
+                                <div class="row">
+                                    <p class="col-12 mt-3 subtitle mb-4">Shipping Method</p>
+                                </div>
+
+                                <div class="row">
+                                <div class="form-check col-12 mb-3 ms-3">
+                                    <input class="form-check-input" type="radio"  name="buyformat">
+                                    <label class="form-check-label">Free Shipping and Store Pickup</label>
+                                </div>
+
+                                <div class="form-check col-12 mb-3 ms-3">
+                                    <input class="form-check-input" type="radio"  name="buyformat">
+                                    <label class="form-check-label">Free Shipping Only</label>
+                                </div>
+
+                                <div class="form-check col-12 mb-3 ms-3">
+                                    <input class="form-check-input" type="radio"  name="buyformat">
+                                    <label class="form-check-label">Free Shipping Only</label>
+                                </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Shipping-->
+
+                        <!--Save-->
+                        
+
+                    </div>
+                    <!--add product-->
+
                 </div>
+                <!--details-->
+
+
+                
+
             </div>
         </div>
 

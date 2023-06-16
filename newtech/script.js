@@ -101,12 +101,8 @@ function menuChange(){
     menuchange.classList.toggle("d-none");
 }
 
-function overview(){
-    alert("ok");
-}
 
-
-
+/*
 var adoverview = document.getElementById("adoverview")
 var adproduct = document.getElementById("adproduct")
 var adorders = document.getElementById("adorders")
@@ -117,7 +113,7 @@ var adsetting = document.getElementById("adsetting")
 var adhelp = document.getElementById("adhelp")
 var adcontactus = document.getElementById("adcontactus")
 var adlogout = document.getElementById("adlogout")
-
+*/
 
 var adminbanner1 = document.getElementById("adminbanner1")
 var adminbanner2 = document.getElementById("adminbanner2")
@@ -139,4 +135,17 @@ function adminsigninbtn(){
 
     adminsignin.classList.add("d-none");
     adminpanel.classList.remove("d-none");
+}
+
+var manageproduct = document.getElementById("manageproduct");
+var overview = document.getElementById("overview");
+
+function adoverview(){
+    overview.classList.remove("d-none");
+    manageproduct.classList.add("d-none");
+}
+
+function admanageproduct(){
+    manageproduct.classList.remove("d-none");
+    overview.classList.add("d-none");
 }
