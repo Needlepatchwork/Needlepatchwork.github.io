@@ -27,7 +27,6 @@ function changeViewSignInDone() {
 
 var home = document.getElementById("home");
 var product = document.getElementById("product");
-var sell = document.getElementById("sell");
 var about = document.getElementById("about");
 var advsearch = document.getElementById("advsearch");
 
@@ -35,38 +34,28 @@ var advsearch = document.getElementById("advsearch");
 var aboutsection = document.getElementById("aboutsection");
 var advsearchsection = document.getElementById("advsearchsection");
 var homesection = document.getElementById("homesection");
+var productsection = document.getElementById("productsection");
 
 
 function homePage(){
     home.classList.add("active");
     product.classList.remove("active");
-    sell.classList.remove("active");
     about.classList.remove("active");
     advsearch.classList.remove("active");
 
+    homesection.classList.remove("d-none");
     aboutsection.classList.add("d-none");
     advsearchsection.classList.add("d-none");
+    productsection.classList.add("d-none");
 }
 
 function productPage(){
     product.classList.add("active");
     home.classList.remove("active");
-    sell.classList.remove("active");
     about.classList.remove("active");
     advsearch.classList.remove("active");
 
-    aboutsection.classList.add("d-none");
-    advsearchsection.classList.add("d-none");
-    homesection.classList.add("d-none");
-}
-
-function sellPage(){
-    sell.classList.add("active");
-    product.classList.remove("active");
-    home.classList.remove("active");
-    about.classList.remove("active");
-    advsearch.classList.remove("active");
-
+    productsection.classList.remove("d-none");
     aboutsection.classList.add("d-none");
     advsearchsection.classList.add("d-none");
     homesection.classList.add("d-none");
@@ -75,19 +64,18 @@ function sellPage(){
 function aboutPage(){
     about.classList.add("active");
     product.classList.remove("active");
-    sell.classList.remove("active");
     home.classList.remove("active");
     advsearch.classList.remove("active");
 
     aboutsection.classList.remove("d-none");
     advsearchsection.classList.add("d-none");
     homesection.classList.add("d-none");
+    productsection.classList.add("d-none");
 }
 
 function advsearchPage(){
     advsearch.classList.add("active");
     product.classList.remove("active");
-    sell.classList.remove("active");
     home.classList.remove("active");
     about.classList.remove("active");
 
@@ -213,7 +201,15 @@ function topratedDropdown(){
     menu5.classList.toggle("menufontcolor");
 }
 
+var singlepage = document.getElementById("singlepage");
+var productpageproductdiv = document.getElementById("productpageproductdiv");
 
 function singlePageView(){
-    alert("Oi Oi")
+    singlepage.classList.remove("d-none");
+    productpageproductdiv.classList.add("d-none");
+}
+
+function singlePageViewBack(){
+    singlepage.classList.add("d-none");
+    productpageproductdiv.classList.remove("d-none");
 }

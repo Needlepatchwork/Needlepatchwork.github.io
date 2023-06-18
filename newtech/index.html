@@ -53,9 +53,6 @@
                   <a style="color: rgb(44, 44, 44);" class="nav-link" href="#" id="product" onclick="productPage(); menuChange();">Products</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a style="color: rgb(44, 44, 44);" class="nav-link" href="#" id="sell" onclick="sellPage(); menuChange();">Sell</a>
-                </li>
-                <li class="nav-item mb-2">
                   <a style="color: rgb(44, 44, 44);" class="nav-link" href="#" id="about" onclick="aboutPage(); menuChange();">About</a>
                 </li>
                 <li class="nav-item mb-2">
@@ -93,9 +90,6 @@
                   <a style="color: white;" class="nav-link" href="#" id="product" onclick="productPage()">Products</a>
                 </li>
                 <li class="nav-item me-3">
-                  <a style="color: white;" class="nav-link" href="#" id="sell" onclick="sellPage()">Sell</a>
-                </li>
-                <li class="nav-item me-3">
                   <a style="color: white;" class="nav-link" href="#" id="about" onclick="aboutPage()">About</a>
                 </li>
                 <li class="nav-item me-3">
@@ -117,7 +111,7 @@
         <!--Navbar-->
 
         <!--Home-->
-        <div class="container-fluid col-10 offset-1 mt-3 d-none" id="homesection">
+        <div class="container-fluid col-10 offset-1 mt-3" id="homesection">
         <div class="row">
 
         <div class="col-12 col-lg-6">
@@ -162,7 +156,7 @@
           
           <div class="col-12">
 
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
               <div class="col">
                 <div class="card h-100 catergorycardhover">
                   <img src="resources/products/iphone10.jpeg" class="card-img-top" alt="...">
@@ -555,7 +549,7 @@
         <!--advanced search page-->
 
         <!--product page-->
-        <div class="container-fluid">
+        <div class="container-fluid d-none" id="productsection">
           <div class="row">
 
             <!--menu-->
@@ -657,8 +651,8 @@
                 </div>
               </div>
 
-              <div class="row m-2 productsmainsubdiv shadow">
-                <div class="col mt-3 mb-3 m-2 d-none">
+              <div class="row mt-3 m-2 productsmainsubdiv shadow">
+                <div class="col mt-3 mb-3 m-2" id="productpageproductdiv">
 
 
                   <!--Mobile Phones-->
@@ -1031,9 +1025,17 @@
                 </div>
               </div>
 
-              <div class="row m-1 productsmainsubdiv">
+              
+              <!--Single Page-->
+
+              <div class="row m-1 mb-5 productsmainsubdiv d-none" id="singlepage">
                 
                   <div class="card">
+
+                    <div class="mt-3 ms-2">
+                        <img src="resources/back.png" style="height: 20px;" onclick="singlePageViewBack();" class="cursor" alt="">
+                    </div>
+
                     <div class="row g-0">
 
                       <div class="col-md-5">
@@ -1042,24 +1044,24 @@
                         </div>
 
                         <div class="d-block d-md-none">
-                        <div style="height: 2px;background-color: rgb(235, 235, 235);"></div>
+                        <div style="height: 2px;background-color: rgb(235, 235, 235);" class="mb-2"></div>
 
-                        <div class="row row-col-1 row-col-md-1 ms-4 me-4">
-                          <div class="col card m-3 h-100">
+                        <div class="row row-col-md-1 ms-2 me-2">
+                          <div class="col card m-2 h-100">
                             <img src="resources/phone/2.jpg" class="img-fluid rounded-start" alt="...">
                           </div>
-                          <div class="col card m-3">
+                          <div class="col card m-2 h-100">
                             <img src="resources/phone/3.jpg" class="img-fluid rounded-start" alt="...">
                           </div>
-                          <div class="col card m-3">
+                          <div class="col card m-2 h-100">
                             <img src="resources/phone/4.jpg" class="img-fluid rounded-start" alt="...">
                           </div>
-                          <div class="col card m-3">
+                          <div class="col card m-2 h-100">
                             <img src="resources/phone/5.jpg" class="img-fluid rounded-start" alt="...">
                           </div>
                         </div>
                         
-                        <div style="height: 2px;background-color: rgb(235, 235, 235);" class="mt-1"></div>
+                        <div style="height: 2px;background-color: rgb(235, 235, 235);" class="mt-2"></div>
                         </div>
 
                       </div>
@@ -1075,7 +1077,7 @@
                             <div style="height: 2px;background-color: rgb(235, 235, 235);"></div>
     
                             <div class="row row-col-1 row-col-md-1 ms-4 me-4">
-                              <div class="col card m-3 h-100">
+                              <div class="col card m-3">
                                 <img src="resources/phone/2.jpg" class="img-fluid rounded-start" alt="...">
                               </div>
                               <div class="col card m-3">
@@ -1090,6 +1092,20 @@
                             </div>
                             
                             <div style="height: 2px;background-color: rgb(235, 235, 235);" class="mt-1"></div>
+
+                            <!--Single Page Buy-->
+
+                            <div class="row d-none d-xl-block">
+                              <div class="col m-3">
+                                <div class="row mt-4">
+                                  <button style="background-color: rgb(255, 102, 0);color: white;font-family: OpenSansSemiBold;" class=" col-3 btn">Add to Cart</button>
+                                  <button style="background-color: rgb(255, 153, 0);color: white;font-family: OpenSansSemiBold;" class=" col-2 ms-2 btn">Buy Now</button>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!--Single Page Buy-->
+
                           </div>
                           
                           <div class="d-block d-md-none">
@@ -1156,7 +1172,7 @@
                           </ul>
                         </div>
 
-                        <p class="card-text"><small class="text-body-secondary">The iPhone 14 
+                        <p class="card-text col-md-11"><small class="text-body-secondary">The iPhone 14 
                           display has rounded corners that follow a beautiful curved design, 
                           and these corners are within a standard rectangle. When measured as 
                           a standard rectangular shape, the screen is 6.06 inches diagonally 
@@ -1167,13 +1183,29 @@
 
                     </div>
                 
+                  </div>
+
               </div>
 
-            </div>
+              <!--Single Page Buy-->
+
+              <div style="background-color: rgb(243, 243, 243);" class="row fixed-bottom d-block d-xl-none">
+                <div class="col m-2">
+                  <div class="row">
+                    <button style="background-color: rgb(255, 153, 0);color: white;font-family: OpenSansSemiBold;" class=" col-3 col-md-2 offset-5 offset-md-7 btn">Buy Now</button>
+                    <button style="background-color: rgb(255, 102, 0);color: white;font-family: OpenSansSemiBold;" class=" col-3 col-md-2 ms-2 btn">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+
+              <!--Single Page Buy-->
+
+              <!--Single Page-->
 
             <!--details-->
 
             
+            </div>
           </div>
         </div>
         <!--product page-->
