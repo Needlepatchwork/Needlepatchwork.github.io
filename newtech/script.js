@@ -130,22 +130,90 @@ function changeBannerAdminStart(){
 
 var adminsignin = document.getElementById("adminsignin");
 var adminpanel = document.getElementById("adminpanel");
+var bodydiv = document.getElementById("bodydiv");
 
 function adminsigninbtn(){
 
     adminsignin.classList.add("d-none");
     adminpanel.classList.remove("d-none");
+    bodydiv.style.backgroundColor = "white";
 }
 
 var manageproduct = document.getElementById("manageproduct");
 var overview = document.getElementById("overview");
+var addproduct = document.getElementById("addproduct");
 
-function adoverview(){
+function adOverview(){
     overview.classList.remove("d-none");
     manageproduct.classList.add("d-none");
+    addproduct.classList.add("d-none")
 }
 
-function admanageproduct(){
+function adManageProduct(){
     manageproduct.classList.remove("d-none");
     overview.classList.add("d-none");
+    addproduct.classList.add("d-none")
+}
+
+function adAddProduct(){
+    addproduct.classList.remove("d-none")
+    manageproduct.classList.add("d-none");
+    overview.classList.add("d-none");
+}
+
+
+
+function logout(){
+    location.reload();
+}
+
+
+var manageproductview = document.getElementById("manageproductview");
+var addproductview = document.getElementById("addproductview");
+
+function adminProductView(){
+    manageproductview.classList.toggle("d-none");
+    addproductview.classList.toggle("d-none");
+}
+
+var catergorydiv = document.getElementById("catergorydiv");
+var brandsdiv = document.getElementById("brandsdiv");
+var newarrivalsdiv = document.getElementById("newarrivalsdiv");
+var populardiv = document.getElementById("populardiv");
+var toprateddiv = document.getElementById("toprateddiv");
+
+var  menu1 = document.getElementById("menu1");
+var  menu2 = document.getElementById("menu2");
+var  menu3 = document.getElementById("menu3");
+var  menu4 = document.getElementById("menu4");
+var  menu5 = document.getElementById("menu5");
+
+function catergoryDropdown(){
+    catergorydiv.classList.toggle("d-none");
+    menu1.classList.toggle("menufontcolor");
+}
+
+function brandDropdown(){
+    brandsdiv.classList.toggle("d-none");
+    menu2.classList.toggle("menufontcolor");
+}
+
+function newarrivalsDropdown(){
+    newarrivalsdiv.classList.toggle("d-none");
+    menu3.classList.toggle("menufontcolor");
+}
+
+function popularDropdown(){
+    populardiv.classList.toggle("d-none");
+    menu4.classList.toggle("menufontcolor");
+}
+
+function topratedDropdown(){
+    toprateddiv.classList.toggle("d-none");
+    menu5.classList.toggle("menufontcolor");
+}
+
+
+function singlePageView(){
+    alert("Oi Oi")
 }

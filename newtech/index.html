@@ -117,7 +117,7 @@
         <!--Navbar-->
 
         <!--Home-->
-        <div class="container-fluid col-10 offset-1 mt-3" id="homesection">
+        <div class="container-fluid col-10 offset-1 mt-3 d-none" id="homesection">
         <div class="row">
 
         <div class="col-12 col-lg-6">
@@ -553,6 +553,482 @@
           </div>
         </div>
         <!--advanced search page-->
+
+        <!--product page-->
+        <div class="container-fluid">
+          <div class="row">
+            <div style="background-color: rgb(255, 123, 0);" class="col-2 overflow-auto d-none d-lg-block productdiv1">
+              <div class="row m-1 mt-3 mb-3 productsubdiv2">
+                <div class="col m-2">
+                  
+                  <div style="height: 2px;background-color: rgb(235, 235, 235);" class="mt-2 mb-2"></div>
+
+                  <div class="mb-2 cursor px-2 menufontcolor" onclick="catergoryDropdown();" id="menu1">Catergories</div>
+                  <div style="background-color: rgb(250, 250, 250);" class="cursor" id="catergorydiv">
+                    <div class="mb-1 pt-1 px-3 catergorytypehover">Mobile Phone</div>
+                    <div class="mb-1 px-3 catergorytypehover">Tablet</div>
+                    <div class="mb-1 px-3 catergorytypehover">Laptop</div>
+                    <div class="mb-1 px-3 catergorytypehover">Camera</div>
+                    <div class="mb-1 px-3 catergorytypehover">Speakers</div>
+                    <div class="mb-1 px-3 catergorytypehover">Television</div>
+                    <div class="mb-1 pb-1 px-3 catergorytypehover">Monitors</div>
+                  </div>
+
+                  <div style="height: 2px;background-color: rgb(235, 235, 235);" class="mt-2 mb-2"></div>
+
+                  <div class="mb-2 cursor px-2" onclick="brandDropdown();" id="menu2">Brands</div>
+                  <div style="background-color: rgb(250, 250, 250);" class="d-none cursor" id="brandsdiv">
+                    <div class="mb-1 pt-1 px-3 catergorytypehover">Samsung</div>
+                    <div class="mb-1 px-3 catergorytypehover">Apple</div>
+                    <div class="mb-1 px-3 catergorytypehover">Vivo</div>
+                    <div class="mb-1 px-3 catergorytypehover">Sony</div>
+                    <div class="mb-1 px-3 catergorytypehover">Xiaomi</div>
+                    <div class="mb-1 px-3 catergorytypehover">Huawei</div>
+                    <div class="mb-1 pb-1 px-3 catergorytypehover">Oppo</div>
+                  </div>
+
+                  <div style="height: 2px;background-color: rgb(235, 235, 235);" class="mt-2 mb-2"></div>
+
+                  <div class="mb-2 cursor px-2" onclick="newarrivalsDropdown();" id="menu3">New Arrivals</div>
+                  <div style="background-color: rgb(250, 250, 250);" class="d-none cursor" id="newarrivalsdiv">
+                    <div class="mb-1 pt-1 px-3 catergorytypehover">Mobile Phone</div>
+                    <div class="mb-1 px-3 catergorytypehover">Tablet</div>
+                    <div class="mb-1 px-3 catergorytypehover">Laptop</div>
+                    <div class="mb-1 px-3 catergorytypehover">Camera</div>
+                    <div class="mb-1 px-3 catergorytypehover">Speakers</div>
+                    <div class="mb-1 px-3 catergorytypehover">Television</div>
+                    <div class="mb-1 pb-1 px-3 catergorytypehover">Monitors</div>
+                  </div>
+
+                  <div style="height: 2px;background-color: rgb(235, 235, 235);" class="mt-2 mb-2"></div>
+
+                  <div class="mb-2 cursor px-2" onclick="popularDropdown();" id="menu4">Popular Products</div>
+                  <div style="background-color: rgb(250, 250, 250);" class="d-none cursor" id="populardiv">
+                    <div class="mb-1 pt-1 px-3 catergorytypehover">Mobile Phone</div>
+                    <div class="mb-1 px-3 catergorytypehover">Tablet</div>
+                    <div class="mb-1 px-3 catergorytypehover">Laptop</div>
+                    <div class="mb-1 px-3 catergorytypehover">Camera</div>
+                    <div class="mb-1 px-3 catergorytypehover">Speakers</div>
+                    <div class="mb-1 px-3 catergorytypehover">Television</div>
+                    <div class="mb-1 pb-1 px-3 catergorytypehover">Monitors</div>
+                  </div>
+
+                  <div style="height: 2px;background-color: rgb(235, 235, 235);" class="mt-2 mb-2"></div>
+                  
+                  <div class="mb-2 cursor px-2" onclick="topratedDropdown();" id="menu5">Top Rated</div>
+                  <div style="background-color: rgb(250, 250, 250);" class="d-none cursor" id="toprateddiv">
+                    <div class="mb-1 pt-1 px-3 catergorytypehover">Mobile Phone</div>
+                    <div class="mb-1 px-3 catergorytypehover">Tablet</div>
+                    <div class="mb-1 px-3 catergorytypehover">Laptop</div>
+                    <div class="mb-1 px-3 catergorytypehover">Camera</div>
+                    <div class="mb-1 px-3 catergorytypehover">Speakers</div>
+                    <div class="mb-1 px-3 catergorytypehover">Television</div>
+                    <div class="mb-1 pb-1 px-3 catergorytypehover">Monitors</div>
+                  </div>
+
+                  <div style="height: 2px;background-color: rgb(235, 235, 235);" class="mt-2 mb-2"></div>
+
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="col-12 col-lg-10 productsmaindiv">
+              <div class="row m-2 productsmainsubdiv">
+                <div class="col mt-3 mb-3 m-2 d-none d-lg-block">
+                  <div class="row">
+                    <div class="col-9">
+                      <input type="search" class="form-control" placeholder="Search Product">
+                    </div>
+
+                    <div class="col-3">
+                      <button class="btn btn-primary">Search</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="row m-2 productsmainsubdiv shadow">
+                <div class="col mt-3 mb-3 m-2">
+
+
+                  <!--Mobile Phones-->
+
+                  <div>
+                  
+                  <div class="row mb-2">
+                    <div class="col-12 productpagetitle">Mobile Phones</div>
+                  </div>
+
+                  <div style="height: 2px;background-color: rgb(235, 235, 235);" class="mb-3"></div>
+
+                  <div class="row">
+                    <div class="col">
+                      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 g-4">
+                        <div class="col">
+                          <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                            <img src="resources/products/phone1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h6 class="card-title productname">Samsung Galaxy F14</h6>
+                              <h4 class="card-title productname">LKR 56,000</h4>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                            <img src="resources/products/phone2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h6 class="card-title productname">Samsung Galaxy A14</h6>
+                              <h4 class="card-title productname">LKR 56,000</h4>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                            <img src="resources/products/phone3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h6 class="card-title productname">OnePlus 11R</h6>
+                              <h4 class="card-title productname">LKR 56,000</h4>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                            <img src="resources/products/phone4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h6 class="card-title productname">Realme C30s</h6>
+                              <h4 class="card-title productname">LKR 56,000</h4>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                            <img src="resources/products/phone5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h6 class="card-title productname">UMIDIGI A13 Pro</h6>
+                              <h4 class="card-title productname">LKR 56,000</h4>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                            <img src="resources/products/phone6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h6 class="card-title productname">UMIDIGI C1</h6>
+                              <h4 class="card-title productname">LKR 56,000</h4>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                            <img src="resources/products/phone7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h6 class="card-title productname">Samsung Galaxy A54</h6>
+                              <h4 class="card-title productname">LKR 56,000</h4>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                            <img src="resources/products/phone8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h6 class="card-title productname">Asus ROG Phone 7</h6>
+                              <h4 class="card-title productname">LKR 56,000</h4>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                            <img src="resources/products/phone9.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h6 class="card-title productname">OnePlus Nord N20 SE</h6>
+                              <h4 class="card-title productname">LKR 56,000</h4>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                            <img src="resources/products/phone10.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h6 class="card-title productname">Xiaomi Poco X5 Pro</h6>
+                              <h4 class="card-title productname">LKR 56,000</h4>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  
+                  </div>
+
+                  <!--Mobile Phones-->
+
+
+                  <!--Tablets-->
+
+                  <div class="d-none">
+
+                    <div class="row mb-2">
+                      <div class="col-12 productpagetitle">Tablets</div>
+                    </div>
+
+                    <div style="height: 2px;background-color: rgb(235, 235, 235);" class="mt-2 mb-3"></div>
+  
+                    <div class="row">
+                      <div class="col">
+                        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 g-4">
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/tablet1.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">Samsung Galaxy F14</h6>
+                                <h4 class="card-title productname">LKR 56,000</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/tablet2.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">Samsung Galaxy A14</h6>
+                                <h4 class="card-title productname">LKR 56,000</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/tablet3.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">OnePlus 11R</h6>
+                                <h4 class="card-title productname">LKR 56,000</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/tablet4.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">Realme C30s</h6>
+                                <h4 class="card-title productname">LKR 56,000</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/tablet5.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">UMIDIGI A13 Pro</h6>
+                                <h4 class="card-title productname">LKR 56,000</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/tablet6.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">UMIDIGI C1</h6>
+                                <h4 class="card-title productname">LKR 56,000</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/tablet7.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">Samsung Galaxy A54</h6>
+                                <h4 class="card-title productname">LKR 56,000</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/tablet8.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">Asus ROG Phone 7</h6>
+                                <h4 class="card-title productname">LKR 56,000</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/tablet9.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">OnePlus Nord N20 SE</h6>
+                                <h4 class="card-title productname">LKR 56,000</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/tablet10.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">Xiaomi Poco X5 Pro</h6>
+                                <h4 class="card-title productname">LKR 56,000</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+  
+                  <!--Tablets-->
+
+
+                  <!--Laptop-->
+
+                  <div class="d-none">
+
+                    <div class="row mb-2">
+                      <div class="col-12 productpagetitle">Laptops</div>
+                    </div>
+
+                    <div style="height: 2px;background-color: rgb(235, 235, 235);" class="mt-2 mb-3"></div>
+  
+                    <div class="row">
+                      <div class="col">
+                        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 g-4">
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/laptop1.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">HP 15 DY2193DX</h6>
+                                <h4 class="card-title productname">LKR 271,429</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/laptop2.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">HP 491D1UA – 15-DY2091WM</h6>
+                                <h4 class="card-title productname">LKR 205,938</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/laptop3.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">Lenovo V15 G2</h6>
+                                <h4 class="card-title productname">LKR 221,395</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/laptop4.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">Lenovo IdeaPad Slim 5 Pro</h6>
+                                <h4 class="card-title productname">LKR 393,140</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/laptop5.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">ASUS Vivobook</h6>
+                                <h4 class="card-title productname">LKR 319,500</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/laptop6.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">Lenovo Ideapad Flex 5</h6>
+                                <h4 class="card-title productname">LKR 283,752</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/laptop7.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">HP Pavilion X360</h6>
+                                <h4 class="card-title productname">LKR 327,490</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/laptop8.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">HP Pavilion Gaming</h6>
+                                <h4 class="card-title productname">LKR 377,130</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/laptop9.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">Acer Nitro 5</h6>
+                                <h4 class="card-title productname">LKR 318,077</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="col">
+                            <div class="card h-100 producthovereffect cursor" onclick="singlePageView();">
+                              <img src="resources/products/laptop10.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title productname">Lenovo Legion 7</h6>
+                                <h4 class="card-title productname">LKR 885,710</h4>
+                              </div>
+                            </div>
+                          </div>
+  
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+  
+                  <!--Laptop-->
+
+                  <div style="height: 2px;background-color: rgb(235, 235, 235);" class="mt-4 mb-2"></div>
+                  
+                </div>
+              </div>
+
+            </div>
+
+            
+          </div>
+        </div>
+        <!--product page-->
 
 
 
