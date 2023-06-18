@@ -183,3 +183,8 @@
 .productname{
     font-family: "OpenSansSemiBold";
 }
+
+.productprice{
+    font-family: "OpenSansBold";
+    font-size: 30px;
+}
