@@ -111,7 +111,7 @@
 
                 <!--details-->
 
-                <div style="background-color: rgb(243, 243, 243);" class="col-12 col-lg-10 col-md-9 offset-md-3 offset-lg-2">
+                <div style="background-color: rgb(233, 233, 233);" class="col-12 col-lg-10 col-md-9 offset-md-3 offset-lg-2">
                     
                     <!--overview-->
                     <div class="row px-3 pt-3" id="overview">
@@ -140,21 +140,21 @@
                             <div style="border: none;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="card col-12 col-sm-5 col-xl-3 me-sm-4 mb-4">
                                 <div class="card-body">
                                   <h6 class="mb-3 text-body-secondary">Total sales</h6>
-                                  <h5>LKR 285,300.00</h5>
+                                  <h5 style="font-family: OpenSansSemiBold;">LKR 285,300.00</h5>
                                   <h6 class="text-body-tertiary">25% ↑↓</h6>
                                 </div>
                             </div>
                             <div style="border: none;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="card col-12 col-sm-5 col-xl-3 me-sm-4 mb-4">
                                 <div class="card-body">
                                   <h6 class="mb-3 text-body-secondary">Visitors</h6>
-                                  <h5>3659</h5>
+                                  <h5 style="font-family: OpenSansSemiBold;">3659</h5>
                                   <h6 class="text-body-tertiary">15% ↑↓</h6>
                                 </div>
                             </div>
                             <div style="border: none;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="card col-12 col-sm-5 col-xl-3 mb-4 ">
                                 <div class="card-body">
                                   <h6 class="mb-3 text-body-secondary">Total orders</h6>
-                                  <h5>274</h5>
+                                  <h5 style="font-family: OpenSansSemiBold;">274</h5>
                                   <h6 class="text-body-tertiary">45% ↑↓</h6>
                                 </div>
                             </div>
@@ -165,7 +165,7 @@
                         <!--buttons-->
                         <div class="row d-block d-md-none">
                             <button style="background-color: rgb(255, 123, 0);color: white;font-family: OpenSansSemiBold;" class="col-5 ms-2 btn" onclick="adAddProduct();">Add Products</button>
-                            <button style="background-color: rgb(255, 51, 0);color: white;font-family: OpenSansSemiBold;" class="col-5 ms-3 btn" onclick="adManageProduct();">Manage Products</button>
+                            <button style="background-color: rgb(255, 51, 0);color: white;font-family: OpenSansSemiBold;" class="col-6 ms-3 btn" onclick="adManageProduct();">Manage Products</button>
 
                             <!--massage-->
                             <div class="d-block d-md-none mt-3">
@@ -175,7 +175,7 @@
                             <a href="index.html"><button style="background-color: rgb(38, 161, 0);color: white;font-family: OpenSansSemiBold;" class="col-3 mt-5 mb-5 btn" onclick="logout();">Logout</button></a>
                         </div>
 
-                        
+                        <div style="height: 100vh;"></div>
 
                     </div>
                     <!--overview-->
@@ -224,6 +224,8 @@
                         </div>
                     </div>
 
+
+                    <!--buttons-->
                     <div class="row mt-4 mb-4">
                         <div class="col-12">
                             <button class="col-2 col-xl-1 btn btn-danger ms-3">Delete</button>
@@ -233,7 +235,7 @@
                         </div>
                     </div>
 
-                    <div class="row ms-3 me-0 mb-5 col-lg-10 productmanagetablediv">
+                    <div class="row ms-3 me-0 mb-5 col-lg-10 d-none d-md-block productmanagetablediv">
                         <table class="table">
                             <thead>
                               <tr style="background-color: rgb(255, 230, 225);">
@@ -246,7 +248,7 @@
                                 <th scope="col">Product</th>
                                 <th scope="col">Categories</th>
                                 <th scope="col">Brand</th>
-                                <th scope="col" class="text-center">Quantity</th>
+                                <th scope="col" class="text-center">Qty</th>
                                 <th scope="col" class="text-center">Price (LKR)</th>
                               </tr>
                             </thead>
@@ -498,6 +500,251 @@
                                 <th scope="row"><input class="form-check-input" type="checkbox"></th>
                                 <td>Lenovo Ideapad</td>
                                 <td>Laptop</td>
+                                <td>Lenovo</td>
+                                <td class="text-center">10</td>
+                                <td class="text-end">283,752.00</td>
+                              </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row ms-3 me-0 mb-5 col-lg-10 d-block d-md-none productmanagetablediv">
+                        <table class="table">
+                            <thead>
+                              <tr style="background-color: rgb(255, 230, 225);">
+                                <th scope="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">All</label>
+                                    </div>
+                                </th>
+                                <th scope="col">Product</th>
+                                <th scope="col">Brand</th>
+                                <th scope="col" class="text-center">Qty</th>
+                                <th scope="col" class="text-center">Price (LKR)</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Samsung Galaxy F14</td>
+                                <td>Samsung</td>
+                                <td class="text-center">14</td>
+                                <td class="text-end">56,000.00</td>
+                              </tr>
+                              
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Samsung Galaxy A14</td>
+                                <td>Samsung</td>
+                                <td class="text-center">21</td>
+                                <td class="text-end">65,989.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>OnePlus 11R</td>
+                                <td>OnePlus</td>
+                                <td class="text-center">6</td>
+                                <td class="text-end">168,499.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Realme C30s</td>
+                                <td>Realme</td>
+                                <td class="text-center">11</td>
+                                <td class="text-end">46,286.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>UMIDIGI A13 Pro</td>
+                                <td>UMIDIGI</td>
+                                <td class="text-center">7</td>
+                                <td class="text-end">57,131.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Asus ROG Phone 7</td>
+                                <td>Asus</td>
+                                <td class="text-center">4</td>
+                                <td class="text-end">56,000.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Xiaomi Poco X5 Pro</td>
+                                <td>Xiaomi</td>
+                                <td class="text-center">17</td>
+                                <td class="text-end">128,572.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Huawei MatePad 11</td>
+                                <td>Huawei</td>
+                                <td class="text-center">14</td>
+                                <td class="text-end">185,000.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>OnePlus Pad</td>
+                                <td>OnePlus</td>
+                                <td class="text-center">14</td>
+                                <td class="text-end">175,989.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Greentel A9 Tab</td>
+                                <td>Greentel</td>
+                                <td class="text-center">14</td>
+                                <td class="text-end">45,702.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Amazon Kindle (11th Gen)</td>
+                                <td>Amazon</td>
+                                <td class="text-center">14</td>
+                                <td class="text-end">55,989.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Lenovo V15 G2 Intel Core i5</td>
+                                <td>Lenovo</td>
+                                <td class="text-center">10</td>
+                                <td class="text-end">221,395.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>ASUS Vivobook</td>
+                                <td>ASUS</td>
+                                <td class="text-center">10</td>
+                                <td class="text-end">319,500.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Acer Nitro 5</td>
+                                <td>Acer</td>
+                                <td class="text-center">10</td>
+                                <td class="text-end">318,077.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Lenovo Ideapad</td>
+                                <td>Lenovo</td>
+                                <td class="text-center">10</td>
+                                <td class="text-end">283,752.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>HP 15 DY2193DX</td>
+                                <td>HP</td>
+                                <td class="text-center">10</td>
+                                <td class="text-end">271,429.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>HP Pavilion Gaming</td>
+                                <td>HP</td>
+                                <td class="text-center">10</td>
+                                <td class="text-end">377,130.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Huawei MatePad 11</td>
+                                <td>Huawei</td>
+                                <td class="text-center">14</td>
+                                <td class="text-end">185,000.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>OnePlus Pad</td>
+                                <td>OnePlus</td>
+                                <td class="text-center">14</td>
+                                <td class="text-end">175,989.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Greentel A9 Tab</td>
+                                <td>Greentel</td>
+                                <td class="text-center">14</td>
+                                <td class="text-end">45,702.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Samsung Galaxy A14</td>
+                                <td>Samsung</td>
+                                <td class="text-center">21</td>
+                                <td class="text-end">65,989.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>OnePlus 11R</td>
+                                <td>OnePlus</td>
+                                <td class="text-center">6</td>
+                                <td class="text-end">168,499.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Realme C30s</td>
+                                <td>Realme</td>
+                                <td class="text-center">11</td>
+                                <td class="text-end">46,286.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>UMIDIGI A13 Pro</td>
+                                <td>UMIDIGI</td>
+                                <td class="text-center">7</td>
+                                <td class="text-end">57,131.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Lenovo V15 G2 Intel Core i5</td>
+                                <td>Lenovo</td>
+                                <td class="text-center">10</td>
+                                <td class="text-end">221,395.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>ASUS Vivobook</td>
+                                <td>ASUS</td>
+                                <td class="text-center">10</td>
+                                <td class="text-end">319,500.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Acer Nitro 5</td>
+                                <td>Acer</td>
+                                <td class="text-center">10</td>
+                                <td class="text-end">318,077.00</td>
+                              </tr>
+
+                              <tr class="productmanagementhover">
+                                <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                                <td>Lenovo Ideapad</td>
                                 <td>Lenovo</td>
                                 <td class="text-center">10</td>
                                 <td class="text-end">283,752.00</td>

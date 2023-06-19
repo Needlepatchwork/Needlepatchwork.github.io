@@ -90,20 +90,6 @@ function menuChange(){
     menuchange.classList.toggle("d-none");
 }
 
-
-/*
-var adoverview = document.getElementById("adoverview")
-var adproduct = document.getElementById("adproduct")
-var adorders = document.getElementById("adorders")
-var adcustomers = document.getElementById("adcustomers")
-var adreviews = document.getElementById("adreviews")
-var adfinance = document.getElementById("adfinance")
-var adsetting = document.getElementById("adsetting")
-var adhelp = document.getElementById("adhelp")
-var adcontactus = document.getElementById("adcontactus")
-var adlogout = document.getElementById("adlogout")
-*/
-
 var adminbanner1 = document.getElementById("adminbanner1")
 var adminbanner2 = document.getElementById("adminbanner2")
 
@@ -161,8 +147,6 @@ function adManageProductBack(){
     overview.classList.remove("d-none");
     addproduct.classList.add("d-none")
 }
-
-
 
 function logout(){
     location.reload();
@@ -260,8 +244,8 @@ var laptoptab = document.getElementById("laptoptab");
 
 function mobilecatorgerychange(){
     mobilecatorgery.classList.remove("d-none");
-    tabletcatorgery.classList.add("d-none");
-    laptopcatorgery.classList.add("d-none");
+    tabletcatorgery.classList.add("d-lg-none");
+    laptopcatorgery.classList.add("d-lg-none");
 
     mobiletab.classList.add("catergorytypeslected");
     tablettab.classList.remove("catergorytypeslected");
@@ -270,8 +254,8 @@ function mobilecatorgerychange(){
 
 function tabletcatorgerychange(){
     mobilecatorgery.classList.add("d-none");
-    tabletcatorgery.classList.remove("d-none");
-    laptopcatorgery.classList.add("d-none");
+    tabletcatorgery.classList.remove("d-lg-none");
+    laptopcatorgery.classList.add("d-lg-none");
 
     mobiletab.classList.remove("catergorytypeslected");
     tablettab.classList.add("catergorytypeslected");
@@ -280,8 +264,8 @@ function tabletcatorgerychange(){
 
 function laptopcatorgerychange(){
     mobilecatorgery.classList.add("d-none");
-    tabletcatorgery.classList.add("d-none");
-    laptopcatorgery.classList.remove("d-none");
+    tabletcatorgery.classList.add("d-lg-none");
+    laptopcatorgery.classList.remove("d-lg-none");
 
     mobiletab.classList.remove("catergorytypeslected");
     tablettab.classList.remove("catergorytypeslected");
