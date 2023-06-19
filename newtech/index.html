@@ -1099,7 +1099,7 @@
                               <div class="col m-3">
                                 <div class="row mt-4">
                                   <button style="background-color: rgb(255, 102, 0);color: white;font-family: OpenSansSemiBold;" class=" col-3 btn">Add to Cart</button>
-                                  <button style="background-color: rgb(255, 153, 0);color: white;font-family: OpenSansSemiBold;" class=" col-2 ms-2 btn">Buy Now</button>
+                                  <button style="background-color: rgb(255, 153, 0);color: white;font-family: OpenSansSemiBold;" class=" col-2 ms-2 btn" onclick="checkoutPay();">Buy Now</button>
                                 </div>
                               </div>
                             </div>
@@ -1192,7 +1192,7 @@
               <div style="background-color: rgb(243, 243, 243);" class="row fixed-bottom d-block d-xl-none">
                 <div class="col m-2">
                   <div class="row">
-                    <button style="background-color: rgb(255, 153, 0);color: white;font-family: OpenSansSemiBold;" class=" col-3 col-md-2 offset-5 offset-md-7 btn">Buy Now</button>
+                    <button style="background-color: rgb(255, 153, 0);color: white;font-family: OpenSansSemiBold;" class=" col-3 col-md-2 offset-5 offset-md-7 btn" onclick="checkoutPay();">Buy Now</button>
                     <button style="background-color: rgb(255, 102, 0);color: white;font-family: OpenSansSemiBold;" class=" col-3 col-md-2 ms-2 btn">Add to Cart</button>
                   </div>
                 </div>
@@ -1202,6 +1202,8 @@
 
               <!--Single Page-->
 
+
+
             <!--details-->
 
             
@@ -1209,6 +1211,159 @@
           </div>
         </div>
         <!--product page-->
+
+
+        <!--Checkout-->
+        <div class="container-fluid checkoutmaindiv d-none" id="checkout">
+          <div class="row">
+          <div class="col-12 col-lg-6">
+          <div class="row">
+            <div class="col m-3 productsmainsubdiv">
+              <div class="row mt-3 m-2">
+                <h5 class="checkoutmainfont">Address</h5>
+                <ul>
+                  <li class="checkoutsubfont">3B 1/4, Havelock Road,</li>
+                  <li class="checkoutsubfont">Colombo 05</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+          <div class="col-12 col-lg-6">
+          <div class="row">
+            <div class="col mt-0 mt-lg-3 m-3 productsmainsubdiv">
+              <div class="row mt-3 m-2">
+                <h5 class="checkoutmainfont">Payment Method</h5>
+                <ul>
+                  <li class="checkoutsubfont">274299******24252</li>
+                  <li class="checkoutsubfont">VISA</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+
+          
+          <div class="row">
+          <div class="col-12 col-lg-6">
+          <div class="row">
+            <div class="col mt-0 m-3 productsmainsubdiv">
+              <div class="row mt-3 m-2">
+                <h5 class="checkoutmainfont mb-3">Shipping Method</h5>
+                <div class="form-check ms-4 mb-2">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault"/>
+                  <label class="form-check-label">Free Shipping</label>
+                </div>
+
+                <div class="form-check ms-4 mb-2">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault"/>
+                  <label class="form-check-label">Store Pickup</label>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+          <div class="row">
+            <div class="col mt-0 m-3 productsmainsubdiv">
+              <div class="row mt-3 m-2">
+                <div class="card col mb-2">
+                  <div class="row card-body">
+                    <div class="col-4">
+                      <img src="resources/phone/1.jpg" class="col-12" alt="">
+                    </div>
+                    
+                    <div class="col-8">
+                      <h5 class="card-title productname">iPhone 14 Pro</h5>
+                      <p class="card-text accordion-flush">Super Retina XDR display | 
+                        6.1‑inch (diagonal) all‑screen OLED display</p>
+                      <h5 class="card-title productprice mb-4">LKR 344,990</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+
+
+          <div class="row">
+          <div class="col-12 col-lg-6">
+          <div class="row mb-5">
+            <div class="col mt-0 m-3 mb-5 productsmainsubdiv">
+              <div class="row mt-3 mb-3 m-2">
+                <h5 class="checkoutmainfont">Summary</h5>
+                <ul class="list-group list-group-horizontal">
+                  <li class="checkoutsubfont list-group-item col-7">Total item costs</li>
+                  <li class="checkoutsubfont list-group-item col-5 text-end">LKR 344.990.00</li>
+                </ul>
+
+                <ul class="list-group list-group-horizontal">
+                  <li class="checkoutsubfont list-group-item col-7">Promo Code</li>
+                  <li class="checkoutsubfont list-group-item col-5 text-end">Enter code here ></li>
+                </ul>
+
+                <ul class="list-group list-group-horizontal">
+                  <li class="checkoutsubfont list-group-item col-7">Total shipping</li>
+                  <li class="checkoutsubfont list-group-item col-5 text-end">LKR 460.00</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+          </div>
+          
+
+          <div class="col-12 d-none d-lg-block col-lg-6">
+            <div class="row">
+              <div class="col mt-0 m-3 productsmainsubdiv">
+                <div class="row mt-3 m-2">
+                  <div class="col m-0 mb-2">
+
+                    <div class="row mb-2">
+                      <ul class="list-group list-group-horizontal">
+                        <li style="font-family: OpenSansBold;border: none;" class="px-4 checkoutsubfont list-group-item col-7">Total</li>
+                        <li style="font-family: OpenSansBold;border: none;" class="checkoutsubfont list-group-item col-5 text-end">LKR 345,450.00</li>
+                      </ul>
+                    </div>
+      
+                    <div class="row">
+                      <button style="background-color: rgb(255, 102, 0);color: white;font-family: OpenSansSemiBold;" class="col-12 btn" onclick="placeOrder();">Place Order</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+          </div>
+
+          <div style="background-color: rgb(255, 255, 255);" class="row fixed-bottom d-block d-lg-none">
+            <div class="col m-0 mb-2">
+
+              <div class="row mb-2">
+                <ul class="list-group list-group-horizontal">
+                  <li style="font-family: OpenSansBold;border: none;" class="px-4 checkoutsubfont list-group-item col-7 d-md-none">Total</li>
+                  <li style="font-family: OpenSansBold;border: none;" class="checkoutsubfont list-group-item col-5 text-end d-md-none">LKR 345,450.00</li>
+
+                  <li style="font-family: OpenSansBold;border: none;" class="checkoutsubfont list-group-item col-11 text-end d-none d-md-block">Total - LKR 345,450.00</li>
+                </ul>
+              </div>
+
+              <div class="row">
+                <button style="background-color: rgb(255, 102, 0);color: white;font-family: OpenSansSemiBold;" class=" col-8 col-md-4 offset-2 offset-md-7 btn" onclick="placeOrder();">Place Order</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <!--Checkout-->
 
 
 

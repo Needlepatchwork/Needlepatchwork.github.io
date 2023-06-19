@@ -213,3 +213,15 @@ function singlePageViewBack(){
     singlepage.classList.add("d-none");
     productpageproductdiv.classList.remove("d-none");
 }
+
+var checkout = document.getElementById("checkout");
+
+function checkoutPay(){
+    checkout.classList.remove("d-none");
+    singlepage.classList.add("d-none");
+}
+
+function placeOrder(){
+    alert("Order Successfully Placed!");
+    location.reload();
+}

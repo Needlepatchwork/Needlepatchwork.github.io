@@ -188,3 +188,17 @@
     font-family: "OpenSansBold";
     font-size: 30px;
 }
+
+.checkoutmaindiv{
+    background-color: rgb(241, 241, 241);
+}
+
+.checkoutmainfont{
+    font-family: "OpenSansSemiBold";
+    font-size: 18px;
+}
+
+.checkoutsubfont{
+    font-family: "OpenSans";
+    list-style: none;
+}
