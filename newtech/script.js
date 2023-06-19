@@ -149,6 +149,18 @@ function adAddProduct(){
     overview.classList.add("d-none");
 }
 
+function adAddProductBack(){
+    addproduct.classList.add("d-none")
+    manageproduct.classList.add("d-none");
+    overview.classList.remove("d-none");
+}
+
+function adManageProductBack(){
+    manageproduct.classList.add("d-none");
+    overview.classList.remove("d-none");
+    addproduct.classList.add("d-none")
+}
+
 
 
 function logout(){
@@ -219,9 +231,55 @@ var checkout = document.getElementById("checkout");
 function checkoutPay(){
     checkout.classList.remove("d-none");
     singlepage.classList.add("d-none");
+    productsection.classList.add("d-none");
 }
 
 function placeOrder(){
     alert("Order Successfully Placed!");
     location.reload();
 }
+
+function saveProduct(){
+    alert("Product Saved Successfully");
+    adAddProductBack();
+}
+
+var mobilecatorgery = document.getElementById("mobilecatorgery");
+var tabletcatorgery = document.getElementById("tabletcatorgery");
+var laptopcatorgery = document.getElementById("laptopcatorgery");
+
+var mobiletab = document.getElementById("mobiletab");
+var tablettab = document.getElementById("tablettab");
+var laptoptab = document.getElementById("laptoptab");
+
+
+function mobilecatorgerychange(){
+    mobilecatorgery.classList.remove("d-none");
+    tabletcatorgery.classList.add("d-none");
+    laptopcatorgery.classList.add("d-none");
+
+    mobiletab.classList.add("catergorytypeslected");
+    tablettab.classList.remove("catergorytypeslected");
+    laptoptab.classList.remove("catergorytypeslected");
+}
+
+function tabletcatorgerychange(){
+    mobilecatorgery.classList.add("d-none");
+    tabletcatorgery.classList.remove("d-none");
+    laptopcatorgery.classList.add("d-none");
+
+    mobiletab.classList.remove("catergorytypeslected");
+    tablettab.classList.add("catergorytypeslected");
+    laptoptab.classList.remove("catergorytypeslected");
+}
+
+function laptopcatorgerychange(){
+    mobilecatorgery.classList.add("d-none");
+    tabletcatorgery.classList.add("d-none");
+    laptopcatorgery.classList.remove("d-none");
+
+    mobiletab.classList.remove("catergorytypeslected");
+    tablettab.classList.remove("catergorytypeslected");
+    laptoptab.classList.add("catergorytypeslected");
+}
+
