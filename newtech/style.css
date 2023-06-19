@@ -206,3 +206,21 @@
     font-family: "OpenSans";
     list-style: none;
 }
+
+
+.social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255, 0.2);
+    margin: 0px 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover {
+    background-color: rgb(202, 54, 54);
+}

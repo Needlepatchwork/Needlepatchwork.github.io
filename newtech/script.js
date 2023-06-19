@@ -82,6 +82,7 @@ function advsearchPage(){
     advsearchsection.classList.remove("d-none");
     aboutsection.classList.add("d-none");
     homesection.classList.add("d-none");
+    productsection.classList.add("d-none");
 }
 
 function menuChange(){
@@ -216,14 +217,18 @@ function topratedDropdown(){
 var singlepage = document.getElementById("singlepage");
 var productpageproductdiv = document.getElementById("productpageproductdiv");
 
+var footer = document.getElementById("footer");
+
 function singlePageView(){
     singlepage.classList.remove("d-none");
     productpageproductdiv.classList.add("d-none");
+    footer.classList.add("d-none");
 }
 
 function singlePageViewBack(){
     singlepage.classList.add("d-none");
     productpageproductdiv.classList.remove("d-none");
+    footer.classList.remove("d-none");
 }
 
 var checkout = document.getElementById("checkout");
