@@ -33,7 +33,7 @@ body{
 }
 
 .banner{
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     text-align: center;
@@ -41,4 +41,9 @@ body{
 
 .feature{
     background-color: #1a1a1a;
+}
+
+.card1{
+    background-color: #1a1a1a;
+    border-radius: 30px;
 }
