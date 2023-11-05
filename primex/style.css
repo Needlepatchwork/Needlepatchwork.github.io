@@ -1,0 +1,44 @@
+body{
+    background-color: #121212;
+    color: #F2F3F5;
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(fonts/Mon/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(fonts/Mon/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(fonts/Mon/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-ExtraLight;
+    src: url(fonts/Mon/Montserrat-ExtraLight.ttf);
+}
+
+*{
+    font-family: "Montserrat-Regular";
+}
+
+.bold{
+    font-family: "Montserrat-Bold";
+}
+
+.banner{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.feature{
+    background-color: #1a1a1a;
+}
