@@ -43,7 +43,24 @@ body{
     background-color: #1a1a1a;
 }
 
-.card1{
+.serviceCard{
     background-color: #1a1a1a;
-    border-radius: 30px;
+    color: #F2F3F5;
+    border-radius: 25px;
+}
+
+.cardimg1{
+    color: #00B0F0;
+}
+
+.cardimg2{
+    color: #FF9521;
+}
+
+.cardimg3{
+    color: #6ABB23;
+}
+
+.cardimg4{
+    color: #FA400F;
 }
