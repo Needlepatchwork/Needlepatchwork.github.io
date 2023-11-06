@@ -3,7 +3,7 @@
 <html>
     <head>
 
-        <title>Home | eShop</title>
+        <title>Primex.lk</title>
         <link rel="icon" href="resources/logo.svg"/>
 
         <meta charset="utf-8">
@@ -22,26 +22,24 @@
               <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #121212;">
                   <div class="container-fluid container-lg">
                     <a class="navbar-brand fs-6" href="#"><span class="bold">PRIMEX SOFTWARE</span> SOLUTIONS</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <i class="bi bi-list navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation"></i>
                     <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                       <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                        <img src="resources/logo.png" class="offcanvas-title mt-2" id="offcanvasDarkNavbarLabel" style="width: 70px;"/>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                       </div>
                       <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                          <li class="nav-item">
+                          <li class="nav-item" data-bs-dismiss="offcanvas">
                             <a class="nav-link active" href="#">Home</a>
                           </li>
-                          <li class="nav-item">
+                          <li class="nav-item" data-bs-dismiss="offcanvas">
                             <a class="nav-link" href="#">About</a>
                           </li>
-                          <li class="nav-item">
+                          <li class="nav-item" data-bs-dismiss="offcanvas">
                               <a class="nav-link" href="#">Services</a>
                           </li>
-                          <li class="nav-item">
+                          <li class="nav-item" data-bs-dismiss="offcanvas">
                               <a class="nav-link" href="#">Contact</a>
                           </li>
                         </ul>
@@ -83,10 +81,10 @@
               </div>
 
               <div>
-                <div class="row row-cols-3 feature p-4">
-                  <div class="col my-3"><i class="bi bi-sliders2 fs-1"></i> </br> <span style="font-family: Montserrat-SemiBold;">Better</span> <span style="font-family: Montserrat-ExtraLight;">Performance</span></div>
-                  <div class="col my-3"><i class="bi bi-shield-check fs-1"></i> </br> <span style="font-family: Montserrat-SemiBold;">More</span> <span style="font-family: Montserrat-ExtraLight;">Security</span></div>
-                  <div class="col my-3"><i class="bi bi-stopwatch fs-1"></i> </br> <span style="font-family: Montserrat-SemiBold;">Quick</span> <span style="font-family: Montserrat-ExtraLight;">Deployment</span></div>
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 d-flex justify-content-center feature p-4">
+                  <div class="col my-3"><i class="bi bi-sliders2 text-success fs-1"></i> </br> <span style="font-family: Montserrat-SemiBold;">Better</span> <span style="font-family: Montserrat-ExtraLight;">Performance</span></div>
+                  <div class="col my-3"><i class="bi bi-shield-check text-success fs-1"></i> </br> <span style="font-family: Montserrat-SemiBold;">More</span> <span style="font-family: Montserrat-ExtraLight;">Security</span></div>
+                  <div class="col my-3"><i class="bi bi-stopwatch text-success fs-1"></i> </br> <span style="font-family: Montserrat-SemiBold;">Quick</span> <span style="font-family: Montserrat-ExtraLight;">Deployment</span></div>
                 </div>
               </div>
               
@@ -145,10 +143,10 @@
               
             </div>
 
-            <div style="width: 50%;margin: auto;" class="my-5"><hr></div>
+            <div style="width: 50%;margin: auto;" class="mt-5"><hr></div>
 
             <div class="row">
-              <div class="col-12 col-md-10 offset-md-1 p-4">
+              <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 p-4">
                 <div class="row p-3 shadow" style="background-color: #171717;border-radius: 25px;">
                   <div class="my-4 text-center"><h2 style="font-family: Montserrat-SemiBold;">Contact Us</h2></div>
                   
@@ -166,7 +164,59 @@
                     <label for="massage" class="form-label ms-2">Massage</label>
                     <textarea class="form-control" rows="5"></textarea>
                   </div>
+
+                  <div class="col-12 d-flex justify-content-end">
+                    <button class="btn text-white" style="background-color: #fa2e0f;">SUBMIT</button>
+                  </div>
                 </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="my-4 text-center"><h2 style="font-family: Montserrat-SemiBold;">Get In Touch</h2></div>
+
+                <div class="col-12 d-flex justify-content-center">
+                  <ul>
+
+                    <li class="list-inline-item me-3">
+                        <a href="#" class="form-floating">
+                          <i class="bi bi-facebook" style="font-size: 35px;color: #3b5998;"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item me-3">
+                        <a href="#" class="form-floating">
+                          <i class="bi bi-twitter" style="font-size: 35px;color: #00acee;"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item me-3">
+                        <a href="#" class="form-floating">
+                          <i class="bi bi-envelope-fill" style="font-size: 35px;color: #B23121;"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item me-3">
+                        <a href="#" class="form-floating">
+                          <i class="bi bi-linkedin" style="font-size: 35px;color: #0072b1;"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item me-4">
+                        <a href="#" class="form-floating">
+                          <i class="bi bi-whatsapp" style="font-size: 35px;color: #19af21;"></i>
+                        </a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 py-4 d-flex justify-content-center align-items-center" style="background-color: #171717;">
+                <div>&copy; 2023 Primex Software Solutions. All Rights Reserved.</div>
               </div>
             </div>
 
